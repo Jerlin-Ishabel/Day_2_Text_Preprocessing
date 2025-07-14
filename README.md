@@ -34,6 +34,8 @@ I used **NLTK** for all core NLP tasks and built a **Streamlit web app** to inte
 **Project Name**: NLP Text Preprocessing App  
 **Built With**: Python 🐍 + Streamlit 🚀 + NLTK 🧠
 
+Demo Link : https://day2textpreprocessing-nanbxgbmzht7dvrjtehjbk.streamlit.app/
+
 📌 This app lets you:
 - Paste or type any raw text
 - Clean it using standard NLP steps
