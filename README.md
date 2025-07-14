@@ -1,50 +1,59 @@
-## 📘 Day 1 - Introduction to NLP & Tokenization
+📘 Day 2 – NLP Text Preprocessing with Streamlit
 
-### ✅ Learning Summary
+✅ Learning Summary
 
-On **Day 1** of my NLP journey, I explored the **basics of Natural Language Processing (NLP)** and performed my first text-processing task — **Tokenization**.
+On **Day 2** of my NLP journey, I explored how to clean raw text using common preprocessing techniques in NLP. This helps prepare text data for machine learning models by removing noise and simplifying structure.
 
-Key takeaways:
-- NLP is a field of AI focused on understanding human language.
-- Applications: Chatbots, Translation, Spam detection, Sentiment Analysis.
-- Tokenization is the process of splitting text into smaller units (words or sentences).
+Key concepts I learned and implemented:
 
-I learned how to use **NLTK** to tokenize words and sentences in Python.
+- Lowercasing the text
+- Removing punctuation
+- Tokenization (splitting text into words)
+- Stopword removal (removing common filler words)
+- Stemming (reducing words to their base root)
+- Lemmatization (smarter root form using grammar context)
+
+I used **NLTK** for all core NLP tasks and built a **Streamlit web app** to interactively process any text.
 
 ---
 
-### 📝 Tasks Completed
+📝 Tasks Completed
 
 | Task No. | Description |
 |----------|-------------|
-| ✅ Task 1 | Installed NLTK and downloaded necessary datasets (`punkt`) |
-| ✅ Task 2 | Wrote Python script to tokenize text into words using `word_tokenize()` |
-| ✅ Task 3 | Tokenized a paragraph into sentences using `sent_tokenize()` |
-| ✅ Task 4 | Created and tested on custom input (my own sentence) |
-| ✅ Task 5 | Observed how punctuation is handled in tokenization |
-
-Script saved as: `day1_tokenization_practice.py`
+| ✅ Task 1 | Wrote a script that applies all preprocessing steps |
+| ✅ Task 2 | Tested with my own sentence (emojis, punctuation, numbers) |
+| ✅ Task 3 | Compared results of Stemming vs Lemmatization |
+| ✅ Task 4 | Saved script as `day2_preprocessing.py` |
+| ✅ Bonus  | Created a function `clean_text(text)` that automates all steps |
 
 ---
 
-### 💻 Mini Project – Tokenizer Web App
+💻 Mini Project – Text Preprocessor App
 
-**Project Name**: `Mini NLP Tokenizer App`  
+**Project Name**: NLP Text Preprocessing App  
 **Built With**: Python 🐍 + Streamlit 🚀 + NLTK 🧠
 
-### Demo Link : 
+📌 This app lets you:
+- Paste or type any raw text
+- Clean it using standard NLP steps
+- View:
+  - Cleaned word tokens
+  - Stemmed version
+  - Lemmatized version
 
-#### ✅ Features:
-- Accepts paragraph input
-- Displays:
-  - Word Tokens
-  - Sentence Tokens
-  - Total word count
-- Simple UI using Streamlit
+---
 
-#### 📂 Files:
-- `tokenizer_app.py`
+📂 Files:
 
-#### ▶️ How to Run:
+- `text_preprocessor_app.py` – Main Streamlit app  
+- `requirement.txt` – Python packages  
+- `Day_2_Text_Preprocessing.ipynb` – Optional notebook version  
+
+---
+
+▶️ How to Run:
+
 ```bash
-streamlit run tokenizer_app.py
+pip install -r requirement.txt
+streamlit run text_preprocessor_app.py
